@@ -107,9 +107,11 @@ export default function ListaSupermercado() {
             >
               {item.nome}
             </span>
+<div>
+
             {!item.comprado && (
               <button
-                className="btn btn-primary btn-sm"
+                className="btn btn-primary btn-sm me-2"
                 onClick={() => marcarComoComprado(index)}
               >
                 Marcar como Comprado
@@ -119,6 +121,8 @@ export default function ListaSupermercado() {
                             className="btn btn-danger btn-sm"
                             onClick={() => removerListaSupermercado(index)}
                     >Remover</button>
+
+</div>
 
           </li>
         ))}
